@@ -1,6 +1,6 @@
 import { EntityRepository, Repository } from 'typeorm';
 
-import Appointment from '../models/Appointment';
+import Appointment from '../../../models/Appointment';
 // responsável por criar, armazenar ler e editar o appointment
 
 @EntityRepository(Appointment)

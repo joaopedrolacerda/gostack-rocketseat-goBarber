@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import { startOfHour, parseISO } from 'date-fns';
+import { parseISO } from 'date-fns';
 import { getCustomRepository } from 'typeorm';
 
 import AppointmentsRepository from '../repositories/AppointmentsRepository';
