@@ -1,12 +1,12 @@
 import { Router } from 'express';
 
 import multer from 'multer';
-import CreateUserService from '../services/CreateUserServices';
+import CreateUserService from '../../modules/users/services/CreateUserServices';
 
-import uploadConfig from '../config/upload';
+import uploadConfig from '../../config/upload';
 
-import ensureAuthenticated from '../middlewares/ensureAuthenticated';
-import UpdateUserAvatarService from '../services/UpdateUserAvatarService';
+import ensureAuthenticated from '../infra/http/ensureAuthenticated';
+import UpdateUserAvatarService from '../../modules/users/services/UpdateUserAvatarService';
 
 // : Rota receber a requisição, chamar outro arquivo, devolver uma resposta
 const usersRouter = Router();
